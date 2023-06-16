@@ -33,8 +33,8 @@
               <div class="col-lg-3 col-6">
                 <!-- small box -->
                 <div class="small-box bg-info">
-                  <div class="inner">
-                    <h3>150</h3>
+                  <div class="inner" >
+                    <h3 id="getNewOrders" >150</h3>
 
                     <p>New Orders</p>
                   </div>
@@ -110,5 +110,8 @@
     <script src="<?php base_url()?>assets/AdminLTE-3.2.0/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
     <!-- AdminLTE App -->
     <script src="<?php base_url()?>assets/AdminLTE-3.2.0/dist/js/adminlte.js"></script>
+
+    <script src="<?= base_url('assets/js/Dashboard.js'); ?> "> </script>
+   
 
   <?= $this->endSection();?>
