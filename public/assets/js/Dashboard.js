@@ -1,7 +1,13 @@
 /**
  * 
  */
-
+/*** Data Table */
+$(function () {
+    $(document).ready( function () {
+      $('#officials').DataTable();
+        } );
+      });
+/***End of Data Table */
 
 function getDashboardData(){
     TotalPopulation()

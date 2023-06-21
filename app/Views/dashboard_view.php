@@ -95,6 +95,60 @@
 
         
           </section>
+          <section class="content-header">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="col-sm-6">
+                <h1> <?=$page_heading1;?> </h1>
+              </div>
+            </div>
+          </div><!-- /.container-fluid -->
+          </section>
+          <!-- Second Content -->
+          <section class="content">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-header">
+                      <h3 class="card-title">Current Barangay Officials</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                      <table id="officials" class="table table-bordered table-hover">
+                        <thead>
+                        <tr>
+                          <th>Full Name</th>
+                          <th>Comittee</th>
+                          <th>Brgy. Positions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <td>John Phillip H. Gonzales</td>
+                          <td>Peace and Order</td>
+                          <td>Brgy. Kagawad</td>
+                        </tr>
+                        <tr>
+                          <td>Dewey C. Fresco</td>
+                          <td>Education</td>
+                          <td>Brgy. Chairman</td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                          <th>Full Name</th>
+                          <th>Comittee</th>
+                          <th>Brgy. Positions</th>
+                        </tr>
+                        </tfoot>
+                      </table>
+                    </div>
+                    <!-- /.card-body -->
+                  </div>
+                  <!-- /.card -->
+          </div>	
+        </section>		
       
       </div>
       
@@ -110,8 +164,11 @@
     <script src="<?php base_url()?>assets/AdminLTE-3.2.0/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
     <!-- AdminLTE App -->
     <script src="<?php base_url()?>assets/AdminLTE-3.2.0/dist/js/adminlte.js"></script>
+    <!-- DataTables  & Plugins -->
+    <script src="<?php base_url()?>assets/AdminLTE-3.2.0/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="<?php base_url()?>assets/AdminLTE-3.2.0/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
 
     <script src="<?= base_url('assets/js/Dashboard.js'); ?> "> </script>
-   
-
+    	  
+    
   <?= $this->endSection();?>
