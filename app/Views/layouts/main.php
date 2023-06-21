@@ -85,7 +85,7 @@
           <img src="<?php base_url()?>assets/AdminLTE-3.2.0/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Admin</a>
+          <a href="#" class="d-block">Welcome, Admin!</a>
         </div>
       </div>
 
@@ -117,9 +117,9 @@
           </li>
           <li class="nav-item">
             <a href="pages/widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="nav-icon fa fa-home"></i>
               <p>
-                Resident Information
+                New Resident
                 
               </p>
             </a>
@@ -128,7 +128,7 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>
               <p>
-                Layout Options
+                Resident Information
                 
               </p>
             </a>

@@ -4,14 +4,14 @@
 
 
 function getDashboardData(){
-    NewOrders()
+    TotalPopulation()
 
     async2Call ()
 
     
 }
 
-async function NewOrders(){
+async function TotalPopulation(){
     try {
         const response = await fetch('http://localhost:8080/dashboard');
         const html = await response.text();
@@ -21,12 +21,12 @@ async function NewOrders(){
         const doc = parser.parseFromString(html, 'text/html');
     
         // Find the <h3> element and extract its value
-        const element = doc.getElementById('getNewOrders');
+        const element = doc.getElementById('getPopulation');
         const value = element.textContent;
         
-        console.log('Retrieving New Orders');
+        console.log('Retrieving Total Population');
         const result = await resolveAfter2Seconds();
-        console.log("New Orders: " +value); 
+        console.log("Total Population: " +value); 
         return value;
       } catch (error) {
         console.error(error);

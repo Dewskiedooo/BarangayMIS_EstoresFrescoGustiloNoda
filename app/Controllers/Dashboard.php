@@ -8,7 +8,7 @@ class Dashboard extends BaseController
     {
         $data =[
             'page_title' => 'Barangay Management Information System',
-            'page_heading' => 'Dashboard',
+            'page_heading' => 'Residents Record Summary',
 
         ];
         
