@@ -38,7 +38,7 @@
                 <!-- small box -->
                 <div class="small-box bg-info">
                   <div class="inner" >
-                    <h3 id="getPopulation" >150</h3>
+                    <h3 id="getPopulation" >2</h3>
 
                     <p>Total Population</p>
                   </div>
@@ -53,7 +53,7 @@
                 <!-- small box -->
                 <div class="small-box bg-success">
                   <div class="inner">
-                    <h3>10<sup style="font-size: 20px">%</sup></h3>
+                    <h3>100<sup style="font-size: 20px">%</sup></h3>
 
                     <p>Registered Voters</p>
                   </div>
@@ -68,7 +68,7 @@
                 <!-- small box -->
                 <div class="small-box bg-warning">
                   <div class="inner">
-                    <h3>35</h3>
+                    <h3>2</h3>
 
                     <p>Male</p>
                   </div>
@@ -83,7 +83,7 @@
                 <!-- small box -->
                 <div class="small-box bg-danger">
                   <div class="inner">
-                    <h3>65</h3>
+                    <h3>0</h3>
 
                     <p>Female</p>
                   </div>

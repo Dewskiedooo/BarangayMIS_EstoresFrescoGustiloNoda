@@ -55,8 +55,8 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="/totalresident" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
+            <a href="/totalResident" class="nav-link">
+              <i class="nav-icon fa fa-home"></i>
               <p>
                 Total Residents
                 
