@@ -32,7 +32,23 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 
 $routes->get('dashboard', 'Dashboard::dashboard');
+$routes->post('dashboard', 'Dashboard::dashboard');
 
+// Login Routes
+$routes->post('login','Login::index');
+$routes->get('login','Login::index');
+$routes->post('login','Login::Login');
+
+
+// Register Routes
+$routes->get('register','Register::index');
+$routes->post('save','Save::save');
+
+// Resident Routes
+$routes->get('/resident', 'Resident::resident');
+
+// Officials Routes
+$routes->get('officials', 'Officials::officials');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
