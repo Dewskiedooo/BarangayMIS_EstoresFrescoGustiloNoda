@@ -49,6 +49,9 @@ $routes->get('/resident', 'Resident::resident');
 
 // Officials Routes
 $routes->get('officials', 'Officials::officials');
+
+// Total Resident Routes
+$routes->get('totalResident','TotalResident::totalResident');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

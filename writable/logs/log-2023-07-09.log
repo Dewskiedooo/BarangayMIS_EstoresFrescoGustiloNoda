@@ -1,1 +1,19 @@
 INFO - 2023-07-09 01:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-09 02:43:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-09 02:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-09 02:45:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-09 02:46:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-09 02:46:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-09 02:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-09 02:57:41 --> Undefined variable $page_heading
+in APPPATH\Views\totalResident_view.php on line 12.
+ 1 APPPATH\Views\totalResident_view.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $page_heading', 'C:\\xampp\\htdocs\\BarangayMIS_EstoresFrescoGustiloNoda\\app\\Views\\totalResident_view.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\BarangayMIS_EstoresFrescoGustiloNoda\\app\\Views\\totalResident_view.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('totalResident_view', [], true)
+ 5 APPPATH\Controllers\TotalResident.php(9): view('totalResident_view')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\TotalResident->totalResident()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TotalResident))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\BarangayMIS_EstoresFrescoGustiloNoda\\public\\index.php')
