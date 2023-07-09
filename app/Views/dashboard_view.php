@@ -5,6 +5,7 @@
   <?=$this->endSection();?>
 
   <?= $this->section("content");?>
+
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
         <!-- Content Header (Page header) -->
@@ -25,8 +26,11 @@
         </div>
         <!-- /.content-header -->
 
+        
         <!-- Main content -->
         <section class="content">
+
+
           <div class="container-fluid">
             <!-- Small boxes (Stat box) -->
             <div class="row">
@@ -118,28 +122,40 @@
                       <table id="officials" class="table table-bordered table-hover">
                         <thead>
                         <tr>
-                          <th>Full Name</th>
-                          <th>Comittee</th>
-                          <th>Brgy. Positions</th>
+                        <th>Position</th>
+                        <th>Name</th>
+                        <th>Contact</th>
+                        <th>Address</th>
+                        <th>Start of Term</th>
+                        <th>End of Term</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
+                          <td>Kagawad</td>
                           <td>John Phillip H. Gonzales</td>
-                          <td>Peace and Order</td>
-                          <td>Brgy. Kagawad</td>
+                          <td>09287365999</td>
+                          <td>10 San Antonio Cavite City, Cavite</td>
+                          <td>July 8, 2020</td>
+                          <td>July 8, 2023</td>
                         </tr>
                         <tr>
+                          <td>Captain</td>
                           <td>Dewey C. Fresco</td>
-                          <td>Education</td>
-                          <td>Brgy. Chairman</td>
+                          <td>09352317890</td>
+                          <td>10 San Antonio Cavite City, Cavite</td>
+                          <td>July 8, 2020</td>
+                          <td>July 8, 2023</td>
                         </tr>
                         </tbody>
                         <tfoot>
                         <tr>
-                          <th>Full Name</th>
-                          <th>Comittee</th>
-                          <th>Brgy. Positions</th>
+                          <th>Position</th>
+                          <th>Name</th>
+                          <th>Contact</th>
+                          <th>Address</th>
+                          <th>Start of Term</th>
+                          <th>End of Term</th>
                         </tr>
                         </tfoot>
                       </table>
@@ -151,5 +167,5 @@
         </section>		
       
       </div>
-        
+
   <?= $this->endSection();?>

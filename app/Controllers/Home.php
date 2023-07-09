@@ -4,6 +4,9 @@ namespace App\Controllers;
 
 class Home extends BaseController
 {
+    public function __construct() {
+        helper('form');
+    }
     public function index()
     {
         return view('login_view');
@@ -13,4 +16,5 @@ class Home extends BaseController
     {
         return view('dashboard_view');
     }
+    
 }

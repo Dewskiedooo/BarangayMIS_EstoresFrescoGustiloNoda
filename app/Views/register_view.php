@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Barangay MIS | Login  </title>
+  <title>Barangay MIS | Register</title>
 
   <!-- Google Font: Source Sans Pro -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -19,17 +19,26 @@
   <link rel="stylesheet" href="<?php base_url()?>assets/AdminLTE-3.2.0/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
-   
+
     <!-- Main content -->
     <div class="container">
       <div class="row d-flex justify-content-center" style="margin-top:45px">
         <div class="col-md-4 col-md-offset-4 ">
-          <h4> LogIn </h4><hr>
-          <form action ="<?= base_url('dashboard')?>" method="post">
+          <h4> Register </h4><hr>
+          <form action ="<?= base_url('save')?>" method="post">
             <?= csrf_field(); ?>
-              <?php if(!empty(session()->getFlashdata('fail'))) : ?>
-                <div class="alert alert-danger"><?= session()->getFlashData('fail')?></div>
+              <!--Notif if the function is error-->
+              <?php if(!empty(session()->getFlashdata('Fail'))) : ?>
+                <div class="alert alert-danger"><?= session()->getFlashdata('fail');?></div>
               <?php endif ?>
+              <!--Notif if the function is Success-->
+              <?php if(!empty(session()->getFlashdata('success'))) : ?>
+                <div class="alert alert-success"><?= session()->getFlashdata('success');?></div>
+              <?php endif ?>
+          <div class="form-group">
+              <label for="">Name</label>
+              <input type="text" class="form-control" name="name" placeholder="Enter fullname">
+            </div>
             <div class="form-group">
               <label for="">Username</label>
               <input type="text" class="form-control" name="username" placeholder="Enter your username">
@@ -39,14 +48,20 @@
               <input type="password" class="form-control" name="password" placeholder="Enter your password">
             </div>
             <div class="form-group">
-              <button class="btn btn-primary btn-block" type="submit"> Log In </button>
+              <label for="">Confirm Password</label>
+              <input type="password" class="form-control" name="cpassword" placeholder="Enter your confirm password">
+            </div>
+            <div class="form-group">
+              <button class="btn btn-primary btn-block" type="submit"> Register </button>
             </div>
             <br>
-            <a href="<?= site_url('register'); ?>"> Have no account? create new account </a>
+            <a href="<?= site_url('login'); ?>"> Already have an account, Login now </a>
           </form>
         </div>
       </div>
   </div>
+
+        
 
 
   <!-- Control Sidebar -->
@@ -57,8 +72,8 @@
 </div>
 <!-- ./wrapper -->
 
-    <!-- jQuery -->
-    <script src="<?php base_url()?>assets/AdminLTE-3.2.0/plugins/jquery/jquery.min.js"></script>
+<!-- jQuery -->
+<script src="<?php base_url()?>assets/AdminLTE-3.2.0/plugins/jquery/jquery.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
     <script src="<?php base_url()?>assets/AdminLTE-3.2.0/plugins/jquery-ui/jquery-ui.min.js"></script>
     <!-- Bootstrap 4 -->
@@ -72,6 +87,7 @@
     <script src="<?php base_url()?>assets/AdminLTE-3.2.0/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
 
     <script src="<?= base_url('assets/js/Dashboard.js'); ?> "> </script>
+<!-- Page specific script -->
 <script>
 $(function () {
   bsCustomFileInput.init();

@@ -1,33 +1,33 @@
 <?= $this->include("layouts/header"); ?>
 
 <body class="hold-transition sidebar-mini layout-fixed">
-<div class="wrapper">
- 
+  <div class="wrapper">
+  
 
-   <!-- Navbar -->
-     <?= $this->include("layouts/navbar"); ?>
+    <!-- Navbar -->
+      <?= $this->include("layouts/navbar"); ?>
 
-        <!-- Main Sidebar Container -->
-             <aside class="main-sidebar sidebar-dark-primary elevation-4">
+          <!-- Main Sidebar Container -->
+              <aside class="main-sidebar sidebar-dark-primary elevation-4">
 
-      <!-- Brand Logo -->
-      <?= $this->include("layouts/logo"); ?>
-
-
-      <!-- Sidebar -->
-      <?= $this->include("layouts/sidebar"); ?>
+        <!-- Brand Logo -->
+        <?= $this->include("layouts/logo"); ?>
 
 
-
-<!-- jQuery -->
-  <?= $this->include("layouts/jquery"); ?>
-<!-- Bootstrap 4 -->
-  <?= $this->include("layouts/bootstrap"); ?>
+        <!-- Sidebar -->
+        <?= $this->include("layouts/sidebar"); ?>
 
 
-<!-- Main Content -->
-<?= $this->renderSection("content"); ?>
 
+        <!-- jQuery -->
+          <?= $this->include("layouts/jquery"); ?>
+        <!-- Bootstrap 4 -->
+          <?= $this->include("layouts/bootstrap"); ?>
+
+
+            <!-- Main Content -->
+            <?= $this->renderSection("content"); ?>
+  </div>
 </body>
 
 </html>
