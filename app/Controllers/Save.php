@@ -12,23 +12,7 @@ class Save extends BaseController
         'password'=>'required|min_length[5]|max_length[12]'
         ]);
 
-    // $validation = $this->validate([
-    //     'username'=>[
-    //         'rules'=>'required',
-    //         'error'=>[
-    //             'required'=>'Your username is required'
-    //         ]
-    //         ],
-    //     'password'=>[
-    //         'rules'=>'required|min_length[5]|max_length[12]',
-    //         'errors'=>[
-    //             'required'=>'Password is required',
-    //             'mind_length'=>'Password must have atleast 5 characters',
-    //             'max_length'=>'Password must not have characters more than 12'
-    //         ]
-    //         ],   
-
-    //         ]);
+    
        if(!$validation){
         return view('register',['validation'=>$this->validator]);
        }else{

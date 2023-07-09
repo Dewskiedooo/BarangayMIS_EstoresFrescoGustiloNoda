@@ -20,6 +20,7 @@ class Login extends BaseController
         $user_info = $loginModel->where('username',$username)->first();
         $user_pass = $loginModel->where('password',$password)->first();
         // $check_password = Hash::check($password, $user_info['password']);
+        
         if(!$user_info and !$user_pass){ 
             return redirect()->to('Dashboard')->withInput();
         }
